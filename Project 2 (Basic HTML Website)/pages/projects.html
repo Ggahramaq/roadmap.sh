@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/image.png" type="image/x-icon">
+    <title>Projects</title>
+    <style>
+        @font-face {
+            font-family: marker;
+            src: url(../font/123marker.ttf);
+        }
+        * {
+            font-family: marker;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+nav {
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+            margin-left: 40px;
+        }
+        img {
+            border-radius: 20%;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .navigation ul li a{
+            color: black;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+
+        .logo a{
+            color: black;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+        ul{
+            display: flex;
+            gap: 10px;
+            list-style: none;
+            font-size: 2rem;
+            margin-right: 50px;
+        }
+
+
+        .title{
+            margin: 0;
+            margin-top: 5px;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+                .project {
+            height: 200px;
+            width: 500px;
+            border-radius: 5%;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        .project2 {
+            height: 200px;
+            width: 500px;
+            border-radius: 5%;
+            border: 2px solid black;
+            text-align: center;
+            margin-left: 400px;
+        }
+
+                section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1300px;  /* smaller container */
+            margin: 0 auto;    /* center on page */
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> <!-- logo + name -->
+                <img src="../img/image.png" alt="logo" height="64px">
+                <a href="./index.html">Huseyn</a>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>/
+                    <li><a href="./projects.html">Projects</a></li>/
+                    <li><a href="./about.html">About</a></li>/
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <h1>My Projects:</h1>
+    <section>
+        <div class="project">
+            <p class="title">Luvi</p>
+            <p>Code of the Multifunctional Bot!</p>
+            <a href="https://github.com/Ggahramaq/Luvi">GitHub Link</a>
+        </div>
+        <div class="project">
+            <p class="title">Single-Page-CV</p>
+            <p>A Single-Page CV. First project in roadmap.sh's frontend project ideas.</p>
+            <a href="https://github.com/Ggahramaq/Single-Page-CV">GitHub Link</a> |
+            <a href="ggahramaq-single-page-cv.vercel.app">Website Link</a>
+        </div>
+    </section>
+    <section>
+        <div class="project2">
+            <p class="title">Basic-HTML-Website</p>
+            <p>A Basic HTML Website. Second project inspired by roadmap.sh's project ideas.</p>
+            <a href="https://github.com/Ggahramaq/Basic-HTML-Website">GitHub Link</a>
+        </div>
+    </section>
+</body>
+</html>

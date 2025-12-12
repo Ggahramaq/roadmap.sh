@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/image.png" type="image/x-icon">
+    <title>About Me</title>
+    <style>
+        @font-face {
+            font-family: marker;
+            src: url(../font/123marker.ttf);
+        }
+        * {
+            font-family: marker;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+nav {
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+            margin-left: 40px;
+        }
+        img {
+            border-radius: 20%;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .navigation ul li a{
+            color: black;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+
+        .logo a{
+            color: black;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+        ul{
+            display: flex;
+            gap: 10px;
+            list-style: none;
+            font-size: 2rem;
+            margin-right: 50px;
+        }
+
+
+        .title{
+            margin: 0;
+            margin-top: -40px;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+                .project {
+            height: 200px;
+            width: 500px;
+            border-radius: 5%;
+            text-align: center;
+        }
+
+                section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1300px;  /* smaller container */
+            margin: 0 auto;    /* center on page */
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> <!-- logo + name -->
+                <img src="../img/image.png" alt="logo" height="64px">
+                <a href="./index.html">Huseyn</a>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>/
+                    <li><a href="./projects.html">Projects</a></li>/
+                    <li><a href="./about.html">About</a></li>/
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <h1>About me:</h1>
+    <section>
+        <div class="project">
+            <p class="title">My name is Huseyn</p>
+            <p>And, i am 13 years old. I like to code and i can code in Python, JavaScript.</p>
+            <a href="https://github.com/Ggahramaq">My GitHub</a>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/image.png" type="image/x-icon">
+    <title>Basic HTML Website</title>
+    <style>
+        @font-face {
+            font-family: marker;
+            src: url(../font/123marker.ttf);
+        }
+        * {
+            font-family: marker;
+        }
+        nav {
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+            margin-left: 40px;
+        }
+        img {
+            border-radius: 20%;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .navigation ul li a{
+            color: black;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+
+        .logo a{
+            color: black;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .projects li a{
+            color: rgb(27, 7, 105);
+            text-decoration: underline;
+        }
+        ul{
+            display: flex;
+            gap: 10px;
+            list-style: none;
+            font-size: 2rem;
+            margin-right: 50px;
+        }
+        main {
+            margin-top: 100px;
+            text-align: center;
+        }
+        h1{
+            font-size: 4rem;
+            font-weight: 200;
+        }
+        p {
+            margin: 0;
+            color: grey;
+            font-size: 1rem;
+            margin-top: -30px;
+        }
+        section {
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            border: solid 1px black;
+        }
+        .projects {
+            display: flex;
+            flex-direction: column; 
+            width: 800px;      
+            padding: 0;     
+            margin: 0;      
+            list-style: none;    
+            border: 1px solid black;
+            text-align: center;
+            height: 600px;  
+        }
+
+        .projects li {
+            border-bottom: 1px solid black; 
+            padding: 10px;  
+        }
+        .projects li:last-child {
+            border-bottom: none;
+        }
+        .projects li:first-child {
+            margin-right: 12px;
+            border-bottom: none;
+        }
+        .education {
+            display: flex;
+            flex-direction: column; 
+            width: 800px;      
+            padding: 0;     
+            margin: 0;      
+            list-style: none;    
+            border: 1px solid black;
+            text-align: center;
+            height: 600px;  
+        }
+        .work {
+            display: flex;
+            flex-direction: column; 
+            width: 1000px;    
+            height: 600px;  
+            padding: 0;     
+            margin: 0;      
+            list-style: none;    
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .work li {
+            font-size: 2.8rem;
+        }
+        .education li:nth-child(n+4)::before {
+            content: "- ";
+        }
+        .pwe{
+            margin-top: 50px;
+        }
+        .underline {
+            border-bottom: 1px solid black; 
+            padding: 10px; 
+        }
+        .education li{
+            max-width: 500px;
+            font-size: 1.65rem;
+            margin-left: 140px;
+            }
+
+        h2 {
+            margin-left: 50px;
+        }
+        .wrapper {
+        display: flex;                 /* make children sit in a row */
+        justify-content: space-between;/* spread them apart */
+        gap: 20px;                     /* optional gap for breathing room */
+        }
+
+        blockquote {
+        flex: 1;                       /* let each review share space equally */
+        margin: 0;
+        border: 1px solid #000;
+        padding: 1rem;
+        border-radius: 5px;
+        height: 100px;
+        margin-top: 40px;
+        }
+        
+        blockquote p {
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> <!-- logo + name -->
+                <img src="../img/image.png" alt="logo" height="64px">
+                <a href="./index.html">Huseyn</a>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>/
+                    <li><a href="./projects.html">Projects</a></li>/
+                    <li><a href="./about.html">About</a></li>/
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Frontend Developer</h1>
+        <p>html only with proper layout, and a little bit of styling.</p>
+    </main>
+    <section class="pwe">
+        <ul class="projects">
+            <li>Projects</li>
+            <li><a href="#">HTML Only Portfolio</a></li>
+            <li><a href="#">Calculator</a></li>
+            <li><a href="#">Quiz App</a></li>
+            <li><a href="#">Countdown Timer</a></li>
+            <li><a href="#">Product Upcoming Page</a></li>
+        </ul>
+        <ul class="work">
+            <li>Work Experience</li>
+            <li>roadmap.sh</li>
+            <li>Solved all the frontend projects</li>
+            <li class="underline"><a href="https://github.com/ggahramaq">Visit my Profile</a></li>
+            <li>OpenSource Work</li>
+            <li>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</li>
+            <li><a href="https://github.com/ggahramaq">Visit my GitHub Profile</a></li>
+        </ul>
+        <ul class="education">
+            <li>Education</li>
+            <li>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</li>
+            <li>Courses i took:</li>
+            <li>Object Oriented Programming</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Web Engineering</li>
+            <li>Artificial Intelligence</li>
+            <li>Human Computer Interaction</li>
+            <li>Computer Graphics</li>
+            <li>Database Management Systems</li>
+            <li>Distributed Database Systems</li>
+            <li>Discreet Mathematics</li>
+        </ul>
+    </section>
+<aside class="reviews">
+  <div class="wrapper">
+    <blockquote>
+      <p>John Doe was a brilliant student; always stood out with his assignments.</p>
+      <footer>Jane Doe, Assistant Professor</footer>
+    </blockquote>
+    <blockquote>
+      <p>John Doe was a brilliant student; always stood out with his assignments.</p>
+      <footer>Jane Doe, Assistant Professor</footer>
+    </blockquote>
+    <blockquote>
+      <p>John Doe was a brilliant student; always stood out with his assignments.</p>
+      <footer>Jane Doe, Assistant Professor</footer>
+    </blockquote>
+  </div>
+</aside>
+</body>
+</html>
