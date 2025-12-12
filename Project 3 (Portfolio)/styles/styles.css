@@ -1,0 +1,73 @@
+nav {
+    display: flex;
+    gap: 0.5%; /* spacing between links */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.left{
+    margin-right: auto;
+}
+
+nav a {
+  justify-content: flex-end;
+  color: #000000;
+  text-align: center;
+  padding: 0.9% 1.2%;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.3s ease-in;
+}
+
+nav a:hover {
+  background-color: #c7c7c7;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+nav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1,h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  display: grid;
+  gap: 1.1rem;
+}
+
+li {
+  background-color: #04AA6D;
+  height: 3rem;
+  width: 30rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 2%;
+  font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+hr{
+  width: 20%;
+}
+
+a{
+  color: rgb(255, 214, 79);
+  text-decoration: none;
+}
