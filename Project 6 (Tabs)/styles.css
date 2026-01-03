@@ -7,9 +7,9 @@ body{
 }
 
 .small-background{
-    width: 50%;
+    width: 800px;
     background-color: #000000;
-    height: 25%;
+    height: 200px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -18,4 +18,27 @@ body{
 
 h2{
     color: #FDFDFD;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 500px;
+    width: 900px;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    padding-left: 70px;
+}   
+
+.text{
+    font-size: 25px;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+span{
+    font-size: 20px;
+    margin-top: 20px;
 }
