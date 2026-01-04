@@ -32,12 +32,11 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    height: 500px;
+    align-items: center;
+    height: max(200px, 39vh);
     width: max(400px, 35vw);
     border: 2px solid var(--black);
     border-radius: 30px;
-    padding-left: 70px;
 }   
 
 .text{
@@ -76,4 +75,34 @@ span{
 .buttons{
     display: flex;
     gap: 16px;
+}
+
+@media (max-width: 500px) {
+    .container{
+        width: 90vw;
+    }
+    .text{
+        font-size: 15px;
+        max-width: 350px;
+    }
+    .button{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .buttons{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    span{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    h2{
+        font-size: max(5px, 16px);
+        white-space: nowrap;
+    }
+    .small-background{
+        width: 80%;
+        padding: 20px;
+    }
 }
