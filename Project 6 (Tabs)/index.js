@@ -15,7 +15,5 @@ document.addEventListener("DOMContentLoaded", () => {
     buttons.forEach((button, index) => {
         button.addEventListener('click', () => { setTab(index) })
         button.addEventListener('focus', () => { setTab(index) })
-
-
     });
 });
