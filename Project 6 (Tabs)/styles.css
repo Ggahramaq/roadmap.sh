@@ -31,7 +31,6 @@ h2{
     border: 2px solid #000000;
     border-radius: 30px;
     padding-left: 70px;
-    pointer-events: none
 }   
 
 .text{
@@ -45,7 +44,7 @@ span{
     margin-top: 20px;
 }
 
-button{
+.button{
     border: none;
     background: none;
     cursor: pointer;
@@ -56,13 +55,18 @@ button{
     transition: 0.3s ease-in;
 }
 
-button:hover{
+.button:hover{
     color: #000000;
 }
 
-button:focus{
+.active{
     outline: none;
     color: #000000;
     font-weight: bold;
     text-decoration: underline;
+}
+
+.buttons{
+    display: flex;
+    gap: 16px;
 }
