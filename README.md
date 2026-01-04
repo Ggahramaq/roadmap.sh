@@ -9,3 +9,4 @@ This repository was created to complete frontend project ideas from roadmap.shâ€
 3. Personal Portfolio - https://roadmap.sh/projects/portfolio-website
 4. Changelog Component - https://roadmap.sh/projects/changelog-component
 5. Testimonial Cards - https://roadmap.sh/projects/testimonial-cards
+6. Tabs - https://roadmap.sh/projects/simple-tabs
